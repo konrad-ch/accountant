@@ -1,4 +1,4 @@
-(defproject konrad_ch/accountant "0.1.9-SNAPSHOT"
+(defproject konrad_ch/accountant "0.1.92-SNAPSHOT"
   :description "Navigation for Single-Page Applications Made Easy."
   :url "http://github.com/konrad-ch/accountant"
   :license {:name "Eclipse Public License"
