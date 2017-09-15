@@ -94,7 +94,7 @@
                   (= host current-host)
                   (or (not port)
                       (= (str port) (str current-port)))
-                  (not= current-relative-href relative-href)
+                  ;(not= current-relative-href relative-href)
                   (path-exists? path))
          (set-token! history relative-href title)
          (.preventDefault e))))))
@@ -131,7 +131,8 @@
   ([route query]
    (if nav-handler
      (let [token (.getToken history)
-           old-route (first (str/split token "?"))
+           ;old-route (first (str/split token "?"))
+           old-route token
            query-string (map->params (reduce-kv (fn [valid k v]
                                                   (if v
                                                     (assoc valid k v)
